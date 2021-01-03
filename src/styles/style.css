@@ -1,0 +1,96 @@
+@import 'nova-flat.css'; 
+@import 'langar.css';
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.page{
+    padding: 50px;
+    font-family: 'Nova Flat', cursive;
+    background: url('../img/star-wars-battlefront-ii_1510128919158.jpg');
+    color: white;
+    min-height: 100vh;
+}
+
+.font-langar{
+    font-family: 'Langar', cursive;
+    padding-right: 5px;
+}
+
+.header-wrapper{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-wrapper .episod-text{
+    display: flex;
+    margin: auto;
+    font-size: 24px;
+}
+
+.header-wrapper .episod-select{
+    width: 30%;
+    padding: 10px;
+    margin: 20px;
+}
+.header-wrapper .show-characters-button{
+    width: 25%;
+    padding: 10px;
+    margin: 20px;
+}
+
+.header-wrapper .go-to-next-page::after{
+    content:'';
+    width: 0px;
+    height: 0px;
+    border: 8px solid transparent;
+    border-top-color: black;
+    display: inline-block;
+    transform: rotate(270deg) translate(0px, 25px);
+    position: absolute;
+    top: 11px;
+    right: 30px;
+
+}
+
+.characters-wrapper{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.characters-wrapper .character-card{
+    border: 1px solid yellow;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgba(177,203,163,0.3);
+    
+}
+
+.characters-wrapper .character-card .base-info{
+    display: flex;
+    flex-direction: row;
+}
+.characters-wrapper .character-card .base-info .photo-image{
+    width: 30%;
+}
+.characters-wrapper .character-card .base-info .photo-image img{
+    width: 100%;
+    display: flex;
+}
+.characters-wrapper .character-card .base-info .full-name{
+    width: 50%;
+    display: flex;
+    margin: auto;
+}
+.characters-wrapper .character-card .addition-info{
+    padding: 10px;
+    display: flex;
+}
