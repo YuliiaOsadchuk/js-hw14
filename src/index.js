@@ -52,6 +52,5 @@ const main = () => {
 };
 
 main();
-console.log('webpack')
     
 
