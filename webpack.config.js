@@ -4,16 +4,16 @@ const HTMLWebpackPlugin = require('html-webpack-plugin');
 const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 
 module.exports = {
-    context: path.resolve(__dirname, 'src'),
+    //context: path.resolve(__dirname, 'src'),
     mode: "development",
-    entry: ['@babel/polyfill', './index.js'],
+    entry: ['@babel/polyfill', './src/index.js'],
     output: {
         filename: 'main.js',
         path: path.resolve(__dirname, 'dist'),
     },
     plugins: [
         new HTMLWebpackPlugin({
-            template: './index.html'
+            template: 'index.html'
         }),
         new CleanWebpackPlugin(),
     ],
